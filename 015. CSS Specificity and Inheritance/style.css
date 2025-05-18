@@ -1,0 +1,33 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add your CSS below this comment. */
+/* This CSS rule will override the existing blue background color */
+
+.box {
+  padding: 10px;
+  background-color: blue;
+  color: yellow;
+}
+
+#outer-box {
+  background-color: rgb(114, 4, 114);
+}
+
+.inner-box {
+  background-color: red;
+}
+
+.white-text {
+  color: white;
+}
