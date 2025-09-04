@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: white;
+
+    /* Flexbox centering */
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    height: 100vh;           /* full viewport height */
+    margin: 0;               /* remove default spacing */
+}
+
+div {
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    border: 10px solid white;
+}
+
+h1 {
+    font-family: Baskerville;
+    text-transform: uppercase;
+}
