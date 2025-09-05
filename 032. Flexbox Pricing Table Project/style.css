@@ -1,0 +1,84 @@
+body {
+  font-family: "Sono", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh;       /* full viewport height */
+  background: #f5f5f5;    /* optional light background */
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center; /* center cards horizontally */
+  align-items: center;     /* align cards vertically inside container */
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.pricing-plan {
+  flex: 0 1 300px; 
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.pricing-plan:hover {
+  transform: scale(1.08);
+}
+
+.plan-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.plan-features {
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.plan-features li {
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+.plan-button {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0078ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.plan-button:hover {
+  background-color: #005fcc;
+}
+
+/* Stack on narrow screens */
+@media (max-width: 1250px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-plan {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
