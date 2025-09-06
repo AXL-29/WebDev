@@ -1,0 +1,42 @@
+body {
+     margin: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 5px solid gray;
+    gap: 0;
+}
+
+.black {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.white {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 800px){
+    .black {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    }
+
+.white {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    }
+}
